@@ -57,18 +57,18 @@
 // let finalZp = sum / keyInObject;
 //   console.log(finalZp)
   // ************************Задача6************************
-  function registrationValidator() {
-    let login = prompt("Введите логин:");
-    let password = prompt("Введите пароль:");
-    let user = {
-        login: login,
-        password: password
-    };
-    let confirmation = confirm(`Подтвердите данные:\nЛогин: ${user.login}\nПароль: ${user.password}`);
-    if (confirmation) {
-        alert("Добро пожаловать!");
-    } else {
-        alert("Регистрация отменена.");
-    }
-}
-registrationValidator();
+//   function registrationValidator() {
+//     let login = prompt("Введите логин:");
+//     let password = prompt("Введите пароль:");
+//     let user = {
+//         login: login,
+//         password: password
+//     };
+//     let confirmation = confirm(`Подтвердите данные:\nЛогин: ${user.login}\nПароль: ${user.password}`);
+//     if (confirmation) {
+//         alert("Добро пожаловать!");
+//     } else {
+//         alert("Регистрация отменена.");
+//     }
+// }
+// registrationValidator();
