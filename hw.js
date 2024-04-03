@@ -77,16 +77,26 @@
 // console.log(getSum(-1, 2));
 
 // ***********************Задача6***********************
-function foo() {
-  console.log("foo");
-}
+// function foo() {
+//   console.log("foo");
+// }
 
-function boo() {
-  console.log("boo");
-}
+// function boo() {
+//   console.log("boo");
+// }
 
-function fooBoo(trueOrFalse, fooFunc, booFunc) {
-  trueOrFalse ? fooFunc() : booFunc();
-}
-fooBoo(true, foo, boo);
-fooBoo(false, foo, boo); 
+// function fooBoo(trueOrFalse, fooFunc, booFunc) {
+//   trueOrFalse ? fooFunc() : booFunc();
+// }
+// fooBoo(true, foo, boo);
+// fooBoo(false, foo, boo); 
+
+// ***********************Задача7***********************
+// function treugOl(a, b, c){ 
+//   return(a + b > c && b + c > a && c + a > b);
+ 
+// }
+// console.log(treugOl(2, 2, 2));
+// console.log(treugOl(5, 19, 5));
+
+// ***********************Задача9***********************
