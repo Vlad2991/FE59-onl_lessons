@@ -1,17 +1,100 @@
-#root {
+body {
 
-    background-color: aqua;
-    width: 50px;
-    border-radius: 2px solid black;
-};
-.rootw{
-    border: 1px solid black;
-    text-align: center;
-    width: 300px;
-    min-height: 100px;
-    background-color: lightseagreen;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
 }
-h1{
-    width: 200px;
-    height: 200px;
+
+#root {
+  background-color: #fff;
+  border-radius: 10px;
+  background-color: #d5d5d5;
+  padding: 5px 20px 50px 20px;
+  width: 300px;
+  height: 300px;
+}
+
+.todo-list {
+  height: 200px;
+
+}
+
+.actions input[type="text"] {
+  height: 37px;
+  margin-left: 10px;
+
+}
+
+.place {
+  text-align: center;
+}
+
+.todo-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border: 2px solid #0e0d0d;
+  border-radius: 5px;
+  padding-bottom: 5px;
+
+}
+
+.todo-item input[type="checkbox"]:checked {
+  background-color: #40e0d0;
+  border-color: #40e0d0;
+}
+
+
+.todo-item input[type="text"] {
+  flex: 1;
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.todo-item input[type="date"] {
+  margin-top: 50px;
+  width: 50px;
+  padding: 2px;
+}
+
+.button-item {
+  cursor: pointer;
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  background-color: #40e0d0;
+
+}
+
+.actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 40px;
+
+}
+
+.actions button {
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.actions button.add {
+  background-color: #40e0d0;
+  color: #fff;
+  height: 45px;
+  margin-left: 10px;
+}
+
+.actions button.delete-all {
+  background-color: #0febd0;
+  color: #fff;
+
 }

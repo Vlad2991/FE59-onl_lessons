@@ -1,18 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+    <title>Todo</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <div id="root">
-        <!-- Здесь будет динамически генерируемый контент -->
-    </div>
-    <div class="rootw">
-      <h1>Ghbdefpepf</h1>
+        <div class="todo-list">
+            <div class="actions">
+                <button class="delete-all">Delete All</button>
+                <input type="text" placeholder="Enter todo ..." class="place">
+                <button class="add">Add</button>
+            </div>
+            <div class="todo-item">
+                <input type="checkbox">
+                <input type="text" value="Todo text">
+                <input type="date">
+                <button class="button-item">X</button>
+            </div>
+            <div class="todo-item">
+                <input type="checkbox">
+                <input type="text" value="Todo text">
+                <input type="date">
+                <button class="button-item">X</button>
+            </div>
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
