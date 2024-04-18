@@ -1,0 +1,17 @@
+#root {
+
+    background-color: aqua;
+    width: 50px;
+    border-radius: 2px solid black;
+};
+.rootw{
+    border: 1px solid black;
+    text-align: center;
+    width: 300px;
+    min-height: 100px;
+    background-color: lightseagreen;
+}
+h1{
+    width: 200px;
+    height: 200px;
+}
