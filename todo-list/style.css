@@ -10,12 +10,14 @@ body {
 }
 
 #root {
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
   border-radius: 10px;
   background-color: #d5d5d5;
   padding: 5px 20px 50px 20px;
-  width: 300px;
-  height: 300px;
+  max-width: 300px;
+  min-height: 320px;
 }
 
 .todo-list {
@@ -42,6 +44,8 @@ body {
   border: 2px solid #0e0d0d;
   border-radius: 5px;
   padding-bottom: 5px;
+  flex: 1;
+ 
 
 }
 
