@@ -32,11 +32,11 @@ function addTask() {
   const newTodo = {
     id: generateUniqueID(),
     date: new Date().toLocaleString(),
-    text: inputTodo.value.trim(), 
+    text: inputTodo.value.trim(),
     isChecked: false,
   };
 
-  if (newTodo.text) {  
+  if (newTodo.text) {
     const taskTodoHTML = createToDo(newTodo);
     divTodoItems.insertAdjacentHTML('beforeend', taskTodoHTML);
 
@@ -84,7 +84,7 @@ function showCurrentDateTime(event) {
   if (clickedElement.classList.contains('todo-item__date-btn')) {
     const todoItem = clickedElement.closest('.todo-item');
     const dateDisplay = todoItem.querySelector('.todo-item__date');
-    dateDisplay.textContent = new Date().toLocaleString(); 
+    dateDisplay.textContent = new Date().toLocaleString();
   }
 }
 
@@ -104,5 +104,5 @@ function saveToLocal() {
 addButton.addEventListener('click', addTask);
 divTodoItems.addEventListener('click', deleteTask);
 divTodoItems.addEventListener('click', taskDone);
-divTodoItems.addEventListener('click', showCurrentDateTime); 
+divTodoItems.addEventListener('click', showCurrentDateTime);
 deleteAll.addEventListener('click', deleteAllTasks);
