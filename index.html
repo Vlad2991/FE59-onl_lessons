@@ -1,52 +1,42 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./dist/index.css" />
-  </head>
-  <body>
-    <header></header>
-    <main>
-      <section class="todo-list">
-        <div class="todo-list__wrapper">
-          <div class="actions">
-            <button class="actions__delete-all btn btn_large btn_red">
-              Delete All
-            </button>
-            <button class="actions__delete-last btn btn_large btn_red">
-              Delete Last
-            </button>
-            <input
-              class="actions__create-field input"
-              type="text"
-              placeholder="Enter todo..."
-            />
-            <button class="actions__add btn btn_large btn_blue">Add</button>
-          </div>
-          <div class="search">
-            <div class="search__all">
-              <span class="search__all-title">All: </span>
-              <span class="search__all-value">2</span>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="todo-list">
+            <div class="header">
+                <h2>Todo List</h2>
             </div>
-            <div class="search__completed">
-              <span class="search__completed-title">Completed: </span>
-              <span class="search__completed-value">1</span>
+            <div class="buttons">
+                <button class="delete-all">Delete All</button>
+                <button class="delete-last">Delete Last</button>
+                <input type="text" class="todo-input" placeholder="Enter todo ...">
+                <button class="add-btn">Add</button>
             </div>
-            <button class="search__show-all btn btn_large btn_blue">
-              Show All
-            </button>
-            <button class="search__show-completed btn btn_large btn_blue">
-              Show Completed
-            </button>
-            <input class="search__text-field input" placeholder="Search..." />
-          </div>
-          <ul class="todos"></ul>
+            <div class="filters">
+                <div class="stats">
+                    <span>All: <span class="all">2</span></span>
+                    <span>Completed: <span class="completed">1</span></span>
+                </div>
+                <button class="show-all">Show All</button>
+                <button class="show-completed">Show Completed</button>
+                <input type="text" class="search" placeholder="Search...">
+            </div>
+            <div class="todo-items">
+            </div>
         </div>
-      </section>
-    </main>
-    <footer></footer>
-  </body>
-  <script src="index.js" type="module"></script>
+    </div>
+    <script type="module" src="loacalStorage.js"></script>
+    <script type="module" src="main.js"></script>
+    <script type="module" src="todoUtils.js"></script>
+</body>
+
 </html>
