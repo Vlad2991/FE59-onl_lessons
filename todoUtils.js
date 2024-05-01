@@ -2,7 +2,7 @@
 function generateUniqueID() {
     return Math.random().toString(36).substr(2, 9);
   }
-//    супер  мсое добавлние задачи 
+//    супер  мое добавлние задачи 
   function createToDo(todo) {
     return `
       <div class="todo-item" id="${todo.id}">
