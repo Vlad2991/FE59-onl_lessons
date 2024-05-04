@@ -1,23 +1,19 @@
 {
   "name": "fe59-onl_lessons",
   "version": "1.0.0",
-  "description": "Все занятия по JS",
+  "description": "Wildberries",
   "main": "index.js",
   "scripts": {
     "dev": "parcel ./src/index.html",
     "build": "parcel build ./src/index.html --no-source-maps"
   },
   "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Karasevgen1205/FE59-onl_lessons.git"
+    "type": "git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Karasevgen1205/FE59-onl_lessons/issues"
-  },
-  "homepage": "https://github.com/Karasevgen1205/FE59-onl_lessons#readme",
+  
   "devDependencies": {
     "parcel-bundler": "^1.12.5"
   }
