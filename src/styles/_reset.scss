@@ -1,0 +1,19 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	// font-family: 'Open Sans', sans-serif;
+	font-weight: 900;
+	scroll-behavior: smooth;
+}
+
+.wrapper {
+	padding: 0 10px;
+	max-width: 1400px;
+	margin: auto;
+}
+
+body {
+	background: linear-gradient(to right, #cb11ab 0, #481173 100%) no-repeat;
+}
