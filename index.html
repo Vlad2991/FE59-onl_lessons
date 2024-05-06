@@ -1,30 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="stylesheet" href="./index.css" />
-  </head>
-  <body>
-    <header class="header">
-      <div class="header__wrapper">
-        <button class="header__show-modal">Show modal</button>
-        <div class="header__clock"></div>
-      </div>
-    </header>
-    <main></main>
-    <section class="modal">
-      <div class="modal__wrapper">
-        <h1 class="modal__title">Это модальное окно!!!</h1>
-        <div class="modal__actions">
-          <button class="modal__confirm">Confirm</button>
-          <button class="modal__cancel">Cancel</button>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Timer</h1>
+        <div class="container__timer">
+            <span class="time">00 sec</span>
         </div>
-        <button class="modal__close">X</button>
-        <ul class="modal__list"></ul>
-      </div>
-    </section>
-  </body>
-  <script src="index.js" type="module"></script>
+        <div class="container__controls">
+            <button id="start">Старт</button>
+            <button id="pause">Пауза</button>
+            <button id="stop">Сбросить</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
