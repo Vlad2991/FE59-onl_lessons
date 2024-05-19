@@ -1,0 +1,155 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  width: 100%;
+
+}
+
+.todo-list {
+  border: 1px solid #ccc;
+  padding: 15px;
+  max-width: 1200px;
+  background-color: rgb(211, 211, 204);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.stats {
+  color: red;
+  padding-right: 20px;
+}
+
+.buttons button {
+  margin-right: 10px;
+}
+
+.todo-items {
+
+
+  margin: 20px 195px;
+}
+
+.todo-item {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  border: 2px solid #0e0d0d;
+  border-radius: 5px;
+  padding-bottom: 5px;
+  flex: 1;
+  width: 320px;
+  height: 70px;
+
+
+}
+
+.todo-item input[type="text"],
+.todo-item input[type="date"] {
+  margin-right: 10px;
+}
+
+.todo-item button {
+  margin-left: auto;
+}
+
+button {
+  background-color: aqua;
+  color: #0f0f0f;
+  height: 25px;
+  border-radius: 5px;
+  height: 35px;
+}
+
+
+
+.all {}
+
+.completed {}
+
+.buttons {}
+
+.delete-all {}
+
+.delete-last {}
+
+.todo-input {
+  width: 350px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.add-btn {
+  width: 70px;
+  margin-left: 50px;
+}
+
+.filters {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 15px;
+  padding-right: 200px;
+}
+
+.show-all {}
+
+.show-completed {}
+
+.search {
+  width: 158px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid black;
+}
+
+.todo-item__search {
+
+  width: 200px;
+  height: 30px;
+  border-radius: 5px;
+  border: 2px solid black;
+
+}
+
+.todo-item__date-btn {
+  width: 50px;
+  margin-bottom: -42px;
+
+}
+
+.todo-item__btn-x {
+  position: absolute;
+  left: 295px;
+  margin-top: -40px;
+  height: 30px;
+
+
+}
+
+.todo-item.done {
+  text-decoration: line-through;
+  /* Strikethrough for completed tasks */
+}
+
+.todo-item.done .todo-item__search {
+  text-decoration: line-through;
+  background-color: aquamarine;
+}
+
+.odo-item__date-btn {
+  text-decoration: none;
+}
+
+.todo-item__date {
+  margin-left: 100px;
+}
