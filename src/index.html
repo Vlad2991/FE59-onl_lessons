@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Интернет-магазин Wildberries</title>
     <link rel="stylesheet" href="./styles/index.scss">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+<link rel="icon" href="./img/favicon/fav_wb.png" type="image/icon">
    
 </head>
 <body>
@@ -62,6 +65,7 @@
                     </div>
                 </div>
             </div>
+            
             <!-- поиск -->
             <div class="botton__search">
                 <input type="text" class="search__input" name="search" placeholder="Найти на Wildberries">
@@ -114,28 +118,308 @@
   <main class="main" id="main">
     	<!--слайдер-->
 		<section class="slider">
-			<div class="wrapper">
+			<div class="count">
 				<div class="slider-container">
 					<div class="slider-slide">
-						<img class="slider-slide__img" src="style/assets/slider/1.jpg" alt="img">
+						<img class="slider-slide__img" src="../src/img/main/sliderImg/1.jpg" alt="img">
 					</div>
 					<div class="slider-slide">
-						<img class="slider-slide__img" src="style/assets/slider/2.jpg" alt="img">
+						<img class="slider-slide__img" src="../src/img/main/sliderImg/2.jpg" alt="img">
 					</div>
 					<div class="slider-slide">
-						<img class="slider-slide__img" src="style/assets/slider/3.png" alt="img">
+						<img class="slider-slide__img" src="../src/img/main/sliderImg/3.png" alt="img">
 					</div>
 					<div class="slider-slide">
-						<img class="slider-slide__img" src="style/assets/slider/4.jpg" alt="img">
+						<img class="slider-slide__img" src="../src/img/main/sliderImg/4.jpg" alt="img">
 					</div>
 					<div class="slider-slide">
-						<img class="slider-slide__img" src="style/assets/slider/5.jpg" alt="img">
+						<img class="slider-slide__img" src="../src/img/main/sliderImg/5.jpg" alt="img">
 					</div>
 				</div>
 			</div>
 		</section>
-  </main>
-  <footer class="footer" id="footer"></footer>
+        <div class="count">
+			<h2 class="goods-title">Хиты продаж</h2>
+			<div class="goods-wrapper">
+				<div class="goods-card">
+					<div class="card-main">
+						<img class="card-main__img" src="./img/main/mainimg/2.jpg" alt="img">
+						<span class="card-main__discount"> -20% </span>
+						<button class="card-main__basket">
+							<img class="card-main__basket__svg" src="./img/main/mainimg/s.svg" alt="">
+						</button>
+						<a href="#" class="card-main__btn">Быстрый просмотр</a>
+				</div>
+					<div class="card-content">
+						<div class="card-content__price">
+							<p class="card-content__price&#45;&#45;discounted">1000р</p>
+						<p class="card-content__price&#45;&#45;total">3000р</p>
+						</div>
+						<p class="card-content__name">Садху доска </p>
+					</div>
+				</div>
+                <div class="goods-card">
+					<div class="card-main">
+						<img class="card-main__img" src="./img/main/mainimg/4.jpg" alt="img">
+						<span class="card-main__discount"> -20% </span>
+						<button class="card-main__basket">
+							<img class="card-main__basket__svg" src="./img/main/mainimg/s.svg" alt="">
+						</button>
+						<a href="#" class="card-main__btn">Быстрый просмотр</a>
+				</div>
+					<div class="card-content">
+						<div class="card-content__price">
+							<p class="card-content__price&#45;&#45;discounted">700р</p>
+						<p class="card-content__price&#45;&#45;total">600р</p>
+						</div>
+						<p class="card-content__name">Палатка</p>
+					</div>
+				</div>
+                <div class="goods-card">
+					<div class="card-main">
+						<img class="card-main__img" src="./img/main/mainimg/5.jpg" alt="img">
+						<span class="card-main__discount"> -20% </span>
+						<button class="card-main__basket">
+							<img class="card-main__basket__svg" src="./img/main/mainimg/s.svg" alt="">
+						</button>
+						<a href="#" class="card-main__btn">Быстрый просмотр</a>
+				</div>
+					<div class="card-content">
+						<div class="card-content__price">
+							<p class="card-content__price&#45;&#45;discounted">2000р</p>
+						<p class="card-content__price&#45;&#45;total">1220р</p>
+						</div>
+						<p class="card-content__name">Навес </p>
+					</div>
+				</div>
+                <div class="goods-card">
+					<div class="card-main">
+						<img class="card-main__img" src="./img/main/mainimg/9.jpg" alt="img">
+						<span class="card-main__discount"> -20% </span>
+						<button class="card-main__basket">
+							<img class="card-main__basket__svg" src="./img/main/mainimg/s.svg" alt="">
+						</button>
+						<a href="#" class="card-main__btn">Быстрый просмотр</a>
+				</div>
+					<div class="card-content">
+						<div class="card-content__price">
+							<p class="card-content__price&#45;&#45;discounted">560р</p>
+						<p class="card-content__price&#45;&#45;total">730р</p>
+						</div>
+						<p class="card-content__name">Фламинго</p>
+					</div>
+				</div>
+                <div class="goods-card">
+					<div class="card-main">
+						<img class="card-main__img" src="./img/main/mainimg/10.jpg" alt="img">
+						<span class="card-main__discount"> -20% </span>
+						<button class="card-main__basket">
+							<img class="card-main__basket__svg" src="./img/main/mainimg/s.svg" alt="">
+						</button>
+						<a href="#" class="card-main__btn">Быстрый просмотр</a>
+				</div>
+					<div class="card-content">
+						<div class="card-content__price">
+							<p class="card-content__price&#45;&#45;discounted">1560р</p>
+						<p class="card-content__price&#45;&#45;total">987р</p>
+						</div>
+						<p class="card-content__name">Палатка </p>
+					</div>
+				</div>
+                <div class="goods-card">
+					<div class="card-main">
+						<img class="card-main__img" src="./img/main/mainimg/11.jpg" alt="img">
+						<span class="card-main__discount"> -20% </span>
+						<button class="card-main__basket">
+							<img class="card-main__basket__svg" src="./img/main/mainimg/s.svg" alt="">
+						</button>
+						<a href="#" class="card-main__btn">Быстрый просмотр</a>
+				</div>
+					<div class="card-content">
+						<div class="card-content__price">
+							<p class="card-content__price&#45;&#45;discounted">1245р</p>
+						<p class="card-content__price&#45;&#45;total">800р</p>
+						</div>
+						<p class="card-content__name">Буй </p>
+					</div>
+				</div>
+                <div class="goods-card">
+					<div class="card-main">
+						<img class="card-main__img" src="./img/main/mainimg/12.jpg" alt="img">
+						<span class="card-main__discount"> -20% </span>
+						<button class="card-main__basket">
+							<img class="card-main__basket__svg" src="./img/main/mainimg/s.svg" alt="">
+						</button>
+						<a href="#" class="card-main__btn">Быстрый просмотр</a>
+				</div>
+					<div class="card-content">
+						<div class="card-content__price">
+							<p class="card-content__price&#45;&#45;discounted">500р</p>
+						<p class="card-content__price&#45;&#45;total">345р</p>
+						</div>
+						<p class="card-content__name">Матрас </p>
+					</div>
+				</div>
+                <div class="goods-card">
+					<div class="card-main">
+						<img class="card-main__img" src="./img/main/mainimg/13.jpg" alt="img">
+						<span class="card-main__discount"> -20% </span>
+						<button class="card-main__basket">
+							<img class="card-main__basket__svg" src="./img/main/mainimg/s.svg" alt="">
+						</button>
+						<a href="#" class="card-main__btn">Быстрый просмотр</a>
+				</div>
+					<div class="card-content">
+						<div class="card-content__price">
+							<p class="card-content__price&#45;&#45;discounted">400р</p>
+						<p class="card-content__price&#45;&#45;total">200р</p>
+						</div>
+						<p class="card-content__name">Носки-Термо </p>
+					</div>
+				</div>
+			</div>
+
+			<!--показать больше-->
+			<button class="show-more"> Показать больше
+				<svg class="show-more__svg" width="16" height="16" xmlns="http://www.w3.org/2000/svg">
+					<path fill-rule="evenodd" clip-rule="evenodd"
+						d="M7.361.238a.977.977 0 011.278 0l7.097 6.377a.755.755 0 010 1.147.977.977 0 01-1.278 0L8 1.96 1.542 7.762a.977.977 0 01-1.277 0 .755.755 0 010-1.147L7.36.238z" />
+					<rect width="2" height="16" rx="1" transform="matrix(-1 0 0 1 9 0)" />
+				</svg>
+			</button>
+
+			<!--адв-->
+			<div class="adv-card">
+				<div class="adv-card-block">
+					<img class="adv-card-img" src="./img/main/mainimg/ads1.jpg" alt="">
+				</div>
+				<div class="adv-card-block">
+					<img class="adv-card-img" src="./img/main/mainimg/ads2.jpg" alt="">
+				</div>
+			</div>
+
+			<!--популярные бренды-->
+			<div class="brand">
+
+				<div class="brands-head">
+					<h2 class="brands-title">Популярные бренды</h2>
+					<a class="brands-title-link" href="#">Смотреть все</a>
+				</div>
+				<div class="brands-logo">
+					<img class="brands-logo-img" src="./img/main/brands/brand1.jpg" alt="">
+					<img class="brands-logo-img" src="./img/main/brands/brand2.jpg" alt="">
+					<img class="brands-logo-img" src="./img/main/brands/brand3.jpg" alt="">
+					<img class="brands-logo-img" src="./img/main/brands/brand4.jpg" alt="">
+					<img class="brands-logo-img" src="./img/main/brands/brand5.jpg" alt="">
+					<img class="brands-logo-img" src="./img/main/brands/brand6.jpg" alt="">
+					<img class="brands-logo-img" src="./img/main/brands/brand7.jpg" alt="">
+					<img class="brands-logo-img" src="./img/main/brands/brand8.jpg" alt="">
+					<img class="brands-logo-img" src="./img/main/brands/brand9.jpg" alt="">
+					<img class="brands-logo-img" src="./img/main/brands/brand10.jpg" alt="">
+						<div class="brands-logo brands-logo--second hidden">
+							<img class="brands-logo-img" src="./img/main/brands/brand11.jpg" alt="">
+							<img class="brands-logo-img" src="./img/main/brands/brand12.jpg" alt="">
+							<img class="brands-logo-img" src="./img/main/brands/brand13.jpg" alt="">
+							<img class="brands-logo-img" src="./img/main/brands/brand14.jpg" alt="">
+							<img class="brands-logo-img" src="./img/main/brands/brand15.jpg" alt="">
+							<img class="brands-logo-img" src="./img/main/brands/brand16.jpg" alt="">
+							<img class="brands-logo-img" src="./img/main/brands/brand17.jpg" alt="">
+							<img class="brands-logo-img" src="./img/main/brands/brand18.jpg" alt="">
+							<img class="brands-logo-img" src="./img/main/brands/brand19.jpg" alt="">
+							<img class="brands-logo-img" src="./img/main/brands/brand20.jpg" alt="">
+						</div>
+				</div>
+
+			</div>
+		</div>
+	</main>
+	
+    <!--Footer-->
+	<footer class="footer" id="footer">
+		<div class="count">
+			<div class="footer-wrapper">
+				<div class="customers ">
+					<ul class="footer-list-title display-none">Покупателям
+						<li class="footer-list-li">Как сделать заказ</li>
+						<li class="footer-list-li">Способы оплаты</li>
+						<li class="footer-list-li">Доставка</li>
+						<li class="footer-list-li">Вопросы и ответы</li>
+					</ul>
+				</div>
+				<div class="partners">
+					<ul class="footer-list-title display-none">Партнерам
+						<li class="footer-list-li">Продавайте на Wildberries</li>
+						<li class="footer-list-li">Откройте пункт выдачи</li>
+						<li class="footer-list-li">Франшизный пункт выдачи</li>
+					</ul>
+				</div>
+				<div class="company">
+					<ul class="footer-list-title display-none">Компания
+						<li class="footer-list-li">О нас</li>
+						<li class="footer-list-li">Реквизиты</li>
+						<li class="footer-list-li">Контакты</li>
+						<li class="footer-list-li"><a href="https://t.me/wbdevs">WB.Tech</a></li>
+					</ul>
+				</div>
+				<div class="site">
+					<ul class="footer-list-title footer-img display-none">Мы в соцсетях
+						<li class="footer-list-li"> <a href="https://vk.com/public42631504">Вконтакте</a></li>
+						<li class="footer-list-li"><a href="https://ok.ru/wildberriesby">Одноклассники</a></li>
+						<li class="footer-list-li"><a href="https://www.youtube.com/Wildberriesshop">YouTube</a></li>
+					</ul>
+				</div>
+				<div class="mobile">
+					<ul class="footer-list-title display-none">Мобильные устройства
+						<li class="footer-list-li ">
+							<img class='download' src="./img/footer/google.png" alt="google">
+						</li>
+						<li class="footer-list-li ">
+							<img class='download' src="./img/footer/apple.png" alt="apple">
+						</li>
+						<li class="footer-list-li">
+							<img class='download' src="./img/footer/appstore.png" alt="appgallery">
+						</li>
+					</ul>
+				</div>
+				<div class="customers-adaptive">
+					<ul class="footer-list-title customers-list">
+						<li class="footer-list-li">Как сделать заказ</li>
+						<li class="footer-list-li">Способы оплаты</li>
+						<li class="footer-list-li">Доставка</li>
+						<li class="footer-list-li">Вопросы и ответы</li>
+					</ul>
+				</div>
+				<div class="mobile-adaptive">
+					<ul class="footer-list-title list-mobile">
+						<li class="footer-list-li list-mobile">
+							<img class='download' src="./img/footer/google.png" alt="google">
+						</li>
+						<li class="footer-list-li list-mobile">
+							<img class='download' src="./img/footer/apple.png" alt="apple">
+						</li>
+						<li class="footer-list-li list-mobile">
+							<img class='download' src="./img/footer/appstore.png" alt="appgallery">
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="rights">
+				<p class="wildberries-rights">2004-2022 © Wildberries — модный интернет-магазин одежды, обуви и аксессуаров.
+				</p>
+				<p class="wildberries-rights">Все права защищены.</p>
+				<p class="wildberries-compatibility"><a
+						href="https://by.wildberries.ru/services/proverka-sovmestimosti">Проверка совместимости</a></p>
+			</div>
+			<div class="payment-method">
+				<img src="./img/footer/visa.svg" alt="">
+				<img src="./img/footer/mastercard.svg" alt="">
+				<img src="./img/footer/mir.svg" alt="">
+			</div>
+		</div>
+	</footer>
+	
 <script type="module" src="./scripts/index.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 </body>
 </html>
