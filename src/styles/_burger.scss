@@ -1,4 +1,3 @@
-/*burger*/
 .menu-btn,
 .menu {
 	display: block;
@@ -49,7 +48,7 @@
 	transition: transform 0.5s;
 	border-top-right-radius: 10px;
 	border-bottom-right-radius: 10px;
-	/*z-index: 2;*/
+
 }
 
 .menu.show {
@@ -139,10 +138,8 @@ nav {
 	transform: rotate(-45deg);
 }
 
-/*POPUP*/
-/*.popup_container {
-	display: none;
-}*/
+/*попуп*/
+
 .wrapper-popup {
 	background-color: rgba(0, 0, 0, 0.5);
 	width: 100%;
