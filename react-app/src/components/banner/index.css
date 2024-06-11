@@ -1,0 +1,43 @@
+.banner {
+    width: 100%;
+    background-color: cadetblue;
+}
+
+.banner__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.banner__wrapper {
+    display: flex;
+    padding: 35px 15px;
+}
+
+.banner__info {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.banner__title {
+    margin-bottom: 15px;
+}
+
+.banner__text {
+    margin-bottom: 20px;
+}
+
+/* .banner__btn {
+    border: 0;
+    border-radius: 15px;
+    background-color: aquamarine;
+    padding: 8px 15px;
+    width: fit-content;
+    cursor: pointer;
+    transition: color .2s linear;
+} */
+
+.banner__img {
+    width: 50%;
+    background-color: blanchedalmond;
+}
