@@ -1,0 +1,29 @@
+.button {
+  border: 0;
+  border-radius: 15px;
+  background-color: #7fffd4;
+  padding: 8px 15px;
+  width: fit-content;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+
+  &:hover {
+    background-color: #c8ffed;
+  }
+
+  &_pink {
+    background-color: #fca6fb;
+
+    &:hover {
+      background-color: #facdf9;
+    }
+  }
+
+  &_yellow {
+    background-color: #fff458;
+
+    &:hover {
+      background-color: #f4f6b3;
+    }
+  }
+}

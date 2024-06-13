@@ -1,12 +1,37 @@
-import styles from './index.css';
+import React, { useState } from "react";
+import styles from "./styles.scss";
 
-export const Button = ({title, isRedBackgroud}) => { // props === {title: 'text}
-    // const title = props.title;
+// В React мы так НЕ ДЕЛАЕМ!!!!!!!
+// const btn = document.querySelector(".header__button");
+// btn.addEventListener("click", (event) => {
+//   console.log("click");
+// });
+// input.addEventListener("input", (event) => {
+//   console.log("input");
+// });
 
-    if (isRedBackgroud) {
-        return <h2>HI!!!!</h2>
-    }
-    
-    // return <button type="button" className="button">{props.title}</button>;
-    return <button type="button" className="button" style={{background: isRedBackgroud ? 'red' : ''}}>{title}</button>;
-}
+export const Button = ({ title, isPinkBackgroud, setIsShowModal }) => {
+  const [isActiveBtn, setIsActiveBtn] = useState(false);
+
+  let className = "button";
+
+  if (isPinkBackgroud) {
+    className += " button_pink";
+  }
+
+  if (isActiveBtn) {
+    className += " button_yellow";
+  }
+
+  const handleClick = () => {
+    // isActiveBtn = true; // Так делать нельзя!!!!!!!!!!
+    setIsActiveBtn(true);
+    setIsShowModal(true);
+  };
+
+  return (
+    <button type="button" className={className} onClick={handleClick}>
+      {title}
+    </button>
+  );
+};
