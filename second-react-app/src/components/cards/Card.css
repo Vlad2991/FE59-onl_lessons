@@ -1,0 +1,44 @@
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 16px;
+    transition: all 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-footer {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card.large {
+    width: 600px;
+}
+
+.card.medium {
+    width: 400px;
+}
+
+.card.small {
+    width: 200px;
+}
+
+.card-title {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.card-date, .card-lesson, .card-author {
+    font-size: 0.8em;
+    color: #666;
+}
