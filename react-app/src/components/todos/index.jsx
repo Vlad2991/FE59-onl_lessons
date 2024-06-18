@@ -1,8 +1,25 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { ToDo } from "../todo";
+import { todosData } from "./mock-data.js";
+import { Spinner } from "../spinner";
 import styles from "./styles.scss";
 
-export const ToDos = ({ data, setData }) => {
+export const ToDos = () => {
+  const [data, setData] = useState(todosData);
+  const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    setIsLoading(true);
+
+    fetch("https://jsonplaceholder.typicode.com/todos")
+      .then((response) => response.json())
+      .then((json) => {
+        // setData(json)
+        setData(todosData);
+      })
+      .finally(() => setIsLoading(false));
+  }, [data]); //componentDidMount
+
   const handleChange = (id) => {
     const newData = data.map((item) => {
       if (item.id === id) {
@@ -17,8 +34,12 @@ export const ToDos = ({ data, setData }) => {
     setData(newData);
   };
 
+  if (isLoading) {
+    return <Spinner />;
+  }
+
   return (
-    <div className="todos">
+    <section className="todos">
       <div className="container">
         <div className="todos__wrapper">
           {data.map((todo, index) => {
@@ -36,6 +57,6 @@ export const ToDos = ({ data, setData }) => {
           })}
         </div>
       </div>
-    </div>
+    </section>
   );
 };

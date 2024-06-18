@@ -1,12 +1,17 @@
 import { Button } from "../button";
+import { ModeButton } from "../mode-button";
 import icon from "./images/icon.svg";
 import styles from "./styles.scss";
 
-export const Header = ({ setIsShowModal }) => {
-  // props === {setIsShowModal: () => void}
+export const Header = ({
+  setIsShowModal,
+  setPage,
+  isBlackTheme,
+  handleChangeTheme,
+}) => {
   return (
-    <header className="header">
-      <div className=".container">
+    <header className={`header ${isBlackTheme ? "header_black" : ""}`}>
+      <div className="container">
         <div className="header__wrapper">
           <div className="header__log">
             <img src={icon} alt="" />
@@ -14,28 +19,42 @@ export const Header = ({ setIsShowModal }) => {
           <nav className="header__nav">
             <ul className="header__list">
               <li className="header__item">
-                <a
-                  href="https://catalog.onliner.by/notebook"
+                <button
                   className="header__link"
+                  onClick={() => setPage("home")}
                 >
                   Home
-                </a>
+                </button>
               </li>
               <li className="header__item">
-                <a href="#" className="header__link">
+                <button
+                  href="#"
+                  className="header__link"
+                  onClick={() => setPage("blog")}
+                >
                   Blog
-                </a>
+                </button>
               </li>
               <li className="header__item">
-                <a href="#" className="header__link">
-                  About
-                </a>
+                <button
+                  href="#"
+                  className="header__link"
+                  onClick={() => setPage("todos")}
+                >
+                  ToDos
+                </button>
               </li>
               <li className="header__item">
                 <Button
                   title="Contact Us"
                   isPinkBackgroud={true}
                   setIsShowModal={setIsShowModal}
+                />
+              </li>
+              <li className="header__item">
+                <ModeButton
+                  isBlackTheme={isBlackTheme}
+                  handleChangeTheme={handleChangeTheme}
                 />
               </li>
             </ul>

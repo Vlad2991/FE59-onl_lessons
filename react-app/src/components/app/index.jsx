@@ -3,60 +3,51 @@ import { Header } from "../header";
 import { Banner } from "../banner";
 import { ToDos } from "../todos";
 import { Modal } from "../modal";
+import { Posts } from "../posts";
 import styles from "./styles.scss";
 
 export const App = () => {
   const [isShowModal, setIsShowModal] = useState(false);
-  const [data, setData] = useState([]);
+  const [page, setPage] = useState("home");
+  const [isBlackTheme, setIsBlackTheme] = useState(false);
+
+  const handleChangeTheme = () => {
+    setIsBlackTheme((prevStat) => !prevStat);
+  };
 
   useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/todos")
-      .then((response) => response.json())
-      .then((json) => {
-        // setData(json)
-        setData([
-          {
-            userId: 1,
-            id: 1,
-            title: "delectus aut autem",
-            completed: false,
-          },
-          {
-            userId: 1,
-            id: 2,
-            title: "quis ut nam facilis et officia qui",
-            completed: false,
-          },
-          {
-            userId: 1,
-            id: 3,
-            title: "fugiat veniam minus",
-            completed: false,
-          },
-          {
-            userId: 1,
-            id: 4,
-            title: "et porro tempora",
-            completed: true,
-          },
-          {
-            userId: 1,
-            id: 5,
-            title:
-              "laboriosam mollitia et enim quasi adipisci quia provident illum",
-            completed: false,
-          },
-        ]);
-      });
-  }, []);
+    // ..что-то что должно выполняться
+
+    return () => {
+      //..что-то что должно выполняться когда компонент размонтируется
+      // то же что и   componentWillUnmount;
+    };
+  }, []); // то же что и componentDidMount;
+
+  useEffect(() => {
+    // ..что-то что должно выполняться только когда меняется page
+  }, [page]); // то же что и componentDidUpdate с обновлением page;
+
+  useEffect(() => {
+    // ..что-то что должно выполняться
+  }); // то же что и componentDidUpdate;
 
   return (
     <React.Fragment>
-      <Header setIsShowModal={setIsShowModal} />
-      <Banner setIsShowModal={setIsShowModal} />
-      <ToDos data={data} setData={setData} />
-      {isShowModal ? <Modal setIsShowModal={setIsShowModal} /> : null}
-      {/* {isShowModal && <Modal setIsShowModal={setIsShowModal} />} */}
+      <Header
+        setIsShowModal={setIsShowModal}
+        setPage={setPage}
+        isBlackTheme={isBlackTheme}
+        handleChangeTheme={handleChangeTheme}
+      />
+      <section className={isBlackTheme ? "black-theme" : ""}>
+        {page === "home" && (
+          <Banner setIsShowModal={setIsShowModal} isBlackTheme={isBlackTheme} />
+        )}
+        {page === "blog" && <Posts />}
+        {page === "todos" && <ToDos />}
+      </section>
+      {isShowModal && <Modal setIsShowModal={setIsShowModal} />}
     </React.Fragment>
   );
 };
