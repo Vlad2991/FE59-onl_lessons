@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, memo } from "react";
 import styles from "./styles.scss";
 
 // В React мы так НЕ ДЕЛАЕМ!!!!!!!
@@ -10,9 +10,10 @@ import styles from "./styles.scss";
 //   console.log("input");
 // });
 
-export const Button = ({ title, isPinkBackgroud, setIsShowModal }) => {
+const View = ({ title, isPinkBackgroud, setIsShowModal }) => {
+  // export const Button = ({ title, isPinkBackgroud, setIsShowModal }) => {
   const [isActiveBtn, setIsActiveBtn] = useState(false);
-
+  // console.log("Button");
   let className = "button";
 
   if (isPinkBackgroud) {
@@ -35,3 +36,5 @@ export const Button = ({ title, isPinkBackgroud, setIsShowModal }) => {
     </button>
   );
 };
+
+export const Button = memo(View);

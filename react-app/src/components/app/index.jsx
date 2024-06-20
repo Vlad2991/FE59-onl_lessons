@@ -3,7 +3,7 @@ import { Header } from "../header";
 import { Banner } from "../banner";
 import { ToDos } from "../todos";
 import { Modal } from "../modal";
-import { Posts } from "../posts";
+import { Blog } from "../blog";
 import styles from "./styles.scss";
 
 export const App = () => {
@@ -14,6 +14,10 @@ export const App = () => {
   const handleChangeTheme = () => {
     setIsBlackTheme((prevStat) => !prevStat);
   };
+
+  // useEffect(() => {
+  //   console.log("Запрос на сервер");
+  // });
 
   useEffect(() => {
     // ..что-то что должно выполняться
@@ -44,7 +48,7 @@ export const App = () => {
         {page === "home" && (
           <Banner setIsShowModal={setIsShowModal} isBlackTheme={isBlackTheme} />
         )}
-        {page === "blog" && <Posts />}
+        {page === "blog" && <Blog />}
         {page === "todos" && <ToDos />}
       </section>
       {isShowModal && <Modal setIsShowModal={setIsShowModal} />}

@@ -1,0 +1,11 @@
+.todo {
+  &__right {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  &__title {
+    cursor: pointer;
+  }
+}

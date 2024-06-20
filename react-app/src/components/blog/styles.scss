@@ -1,0 +1,51 @@
+.posts {
+  margin-top: 35px;
+
+  &__title {
+    margin-bottom: 20px;
+    font-size: 35px;
+  }
+
+  &__wrapper {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-areas:
+      "post-0 post-0 post-5"
+      "post-0 post-0 post-6"
+      "post-1 post-2 post-7"
+      "post-1 post-2 post-8"
+      "post-3 post-4 post-9"
+      "post-3 post-4 post-10";
+    grid-template-columns: 1fr 1fr 1fr;
+
+    &_flex {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  &__nav {
+    margin-bottom: 20px;
+
+    &-btn {
+      padding: 10px 25px;
+      margin-right: 25px;
+      border: 0;
+      border-radius: 15px;
+      cursor: pointer;
+      transition: background-color 0.2s linear;
+
+      &_active {
+        background-color: wheat;
+      }
+
+      &:hover {
+        background-color: rgb(245, 233, 211);
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}

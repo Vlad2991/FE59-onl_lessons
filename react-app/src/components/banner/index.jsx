@@ -11,11 +11,11 @@ import styles from "./styles.scss";
 export class Banner extends React.Component {
   interval;
   callback = () => {
-    console.log("body click");
+    // console.log("body click");
   };
 
   constructor(props) {
-    console.log("constructor - здесь инициилизируется класс");
+    // console.log("constructor - здесь инициилизируется класс");
     super(props);
     this.state = { isShowImage: true, shouldFetchData: false };
     // this.handleClick = this.handleClick.bind(this);

@@ -24,6 +24,7 @@
     margin-bottom: 10px;
     font-size: 18px;
     font-weight: bold;
+    cursor: pointer;
   }
 
   &__text {
@@ -33,6 +34,7 @@
 
   &__img {
     width: 40%;
+    cursor: pointer;
 
     img {
       width: 100%;

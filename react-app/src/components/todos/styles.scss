@@ -10,10 +10,25 @@
     justify-content: center;
     flex-direction: column;
   }
+
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  &__form {
+    margin-bottom: 25px;
+  }
 }
 
 .todo {
-  width: 80%;
+  width: 450px;
   border: 1px solid gray;
   border-radius: 15px;
   background-color: #b3f8f8;
