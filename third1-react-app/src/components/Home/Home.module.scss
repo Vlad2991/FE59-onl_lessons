@@ -1,0 +1,23 @@
+.homeContainer {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  
+  h2 {
+    margin-bottom: 15px;
+  }
+}
+
+.blackTheme .homeContainer {
+  background-color: #333;
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+.blackTheme .homeContainer h2 {
+  color: #fff;
+}

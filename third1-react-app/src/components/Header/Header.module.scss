@@ -1,0 +1,28 @@
+.header {
+    background-color: #3b5998;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  .headerButton {
+    background-color: transparent; 
+    border: 1px solidcurrentColor; 
+    color: inherit; 
+    padding: 10px 20px; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: all 0.2s ease-in-out; 
+  }
+  
+  .headerButton:hover {
+    background-color: #ddd; 
+    color: #333; 
+  }

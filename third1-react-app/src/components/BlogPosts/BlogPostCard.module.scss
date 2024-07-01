@@ -1,0 +1,56 @@
+
+.card {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  color: black; 
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.content {
+  padding: 15px;
+}
+
+.content h3 {
+  margin: 0 0 10px;
+}
+
+.content p {
+  margin: 0 0 5px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.blackTheme .card {
+  background: #333;
+  border-color: #444;
+  color: black; 
+}
+
+.blackTheme .card .footer {
+  color: black; 
+}
+
+.blackTheme .card .content h3,
+.blackTheme .card .content p {
+  color: black; 
+}

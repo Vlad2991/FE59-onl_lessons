@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  gap: 30px;
+  margin-top: 64px;
+  justify-content: center; 
+  }
+  
+  .largeContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #DADADA;
+    width: 736px;
+    height: auto;
+  }
+  
+  .mediumContainer {
+    display: flex;
+    max-width: 736px;
+    gap: 40px 32px;
+    margin-top: 38px;
+    height: 550px;
+  }
+  
+  .smallContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 38.4px;
+    max-width: 336px;
+    
+    
+  }
+  .right__container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+  }
