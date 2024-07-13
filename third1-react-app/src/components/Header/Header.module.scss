@@ -1,28 +1,116 @@
+@import "src/styles/colors";
+
+.container {
+  flex: 1;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: $extra-light;
+  position: relative;
+  overflow: scroll;
+}
+.darkContainer {
+  background-color: $secondary;
+}
 .header {
-    background-color: #3b5998;
-    padding: 10px;
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $primary;
+  width: 99%;
+}
+
+.infoContainer {
+  margin: 156px auto 0 auto;
+}
+.footer {
+  margin-top: 72px;
+  padding: 32px 0;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid $medium;
+  color: $gray;
+}
+.menuContainer {
+  width: 236px;
+  background-color: $white;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  top: 84px;
+  height: calc(100% - 84px);
+}
+.burgerMenuButton {
+  height: 84px;
+  width: 84px;
+  border-radius: 0;
+  border-right: 1px solid $primary-secondary;
+  padding: 16px 30px;
+}
+.authButton {
+  height: 84px;
+}
+.navLinkButton {
+  padding: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  color: $secondary;
+  border-bottom: 1px solid $light;
+  text-decoration: none;
+  &:hover {
+    color: $primary;
+    cursor: pointer;
   }
-  
-  .header a {
-    color: white;
-    text-decoration: none;
-    margin: 0 10px;
-  }
-  .headerButton {
-    background-color: transparent; 
-    border: 1px solidcurrentColor; 
-    color: inherit; 
-    padding: 10px 20px; 
-    border-radius: 5px; 
-    cursor: pointer; 
-    transition: all 0.2s ease-in-out; 
-  }
-  
-  .headerButton:hover {
-    background-color: #ddd; 
-    color: #333; 
-  }
+}
+
+.rightPartOfHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.searchButton {
+  height: 84px;
+  width: 84px;
+  border-radius: 0;
+  border-left: 1px solid $primary-secondary;
+}
+
+.userButton {
+  height: 84px;
+  width: 84px;
+  border-radius: 0;
+  border-left: 1px solid $primary-secondary;
+}
+
+.searchContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex: 1;
+  height: 84px;
+  background-color: $primary-secondary;
+}
+
+.searchInput {
+  background-color: $primary-secondary;
+  border: none;
+  color: $white;
+  border-radius: 0;
+}
+
+.closedSearch {
+  background-color: $primary-secondary;
+  height: 84px;
+  border-radius: 0;
+}
+
+.darkFooter {
+  border-color: $gray;
+}
