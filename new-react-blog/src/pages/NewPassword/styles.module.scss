@@ -1,0 +1,15 @@
+.formwrapper {
+    margin-top: 100px;
+    max-width: 480px;
+    max-height: 472px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border: 1px solid #DADADA;
+}
+
+.errors {
+    color: red;
+    margin-bottom: 10px
+}

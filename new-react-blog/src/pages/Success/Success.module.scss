@@ -1,0 +1,30 @@
+.Formwrapper {
+    margin-top: 100px;
+    max-width: 480px;
+    max-height: 472px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border: 1px solid #DADADA;
+
+    div {
+        p {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+        }
+    }
+
+    input {
+        background-color: #2231AA;
+        color: white;
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+        border: 0px;
+        border-radius: 2px;
+        padding: 16px 32px;
+    }
+}

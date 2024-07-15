@@ -1,0 +1,21 @@
+.DislikeButton {
+    margin-right: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.dislikeCounter {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.DislikeButton:hover {
+    transform: scale(1.1);
+}

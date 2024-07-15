@@ -1,0 +1,19 @@
+.submit {
+    background-color: #2231AA;
+    color: white;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    border: 0px;
+    border-radius: 2px;
+    padding: 16px 32px;
+    transition: 0.3s;
+}
+
+input:focus {
+    outline: 0;
+}
+
+.submit:hover {
+    background-color: #3045e4;
+}

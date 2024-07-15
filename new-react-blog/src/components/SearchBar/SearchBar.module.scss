@@ -1,0 +1,31 @@
+.input {
+    padding: 20px;
+    border: 0px solid;
+    background-color: #5360CD;
+    box-shadow: none;
+    width: 85%;
+    display: flex;
+    width: 100%;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.wrapper {
+    display: flex;
+}
+
+.active {
+    display: flex;
+}
+
+.input:focus {
+    outline: 0
+}
+
+.input::placeholder {
+    color: white;
+}
+
+.input.active {
+    opacity: 1;
+}

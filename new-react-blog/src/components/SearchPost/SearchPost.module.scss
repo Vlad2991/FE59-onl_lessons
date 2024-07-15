@@ -1,0 +1,59 @@
+.post {
+    margin: 10px;
+    border-bottom: 1px solid #DADADA;
+
+    .container {
+        display: flex;
+        margin-bottom: 50px;
+    }
+
+    .titlewrapper {
+        margin-left: 30px;
+        min-width: 200px;
+        max-height: 100px;
+
+        .date {
+            margin-bottom: 5px;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            color: #8D8E97;
+        }
+
+        .title {
+            // color: #313037;
+            margin-bottom: 5px;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+        }
+        @media (max-width: 470px) {
+            .title {font-size: 14px;}
+        }
+
+        .text {
+            text-align: center;
+            font-size: 14px;
+            color: black;
+        }
+    }
+
+    .likeWrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+    .image {
+        width: 100px;
+        height: 100px;
+        max-width: 30%;
+    }
+}
+
+.dark {
+    color: white;
+}

@@ -1,0 +1,26 @@
+.text {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #313037;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.input {
+    border: 0px;
+    border-radius: 2px;
+    background-color: white;
+    padding: 16px 32px;
+    margin-bottom: 20px;
+}
+
+input:focus {
+    outline: 0
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}

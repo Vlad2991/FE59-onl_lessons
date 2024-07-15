@@ -1,0 +1,22 @@
+.disable {
+    display: none;
+}
+
+.active {
+    position: absolute;
+    background: white;
+    z-index: 1000;
+    right: 0px;
+    bottom: 30px;
+    transition: 0.3s;
+
+    button {
+        padding: 15px;
+        border-radius: 5px;
+        width: 100px;
+    }
+}
+
+.active:hover {
+    background: rgb(184, 177, 177);
+}

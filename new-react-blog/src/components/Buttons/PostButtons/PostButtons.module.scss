@@ -1,0 +1,17 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+
+
+    button {
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    .LikeDislikeContainer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}

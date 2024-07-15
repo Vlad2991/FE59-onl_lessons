@@ -1,0 +1,67 @@
+.post {
+    position: relative;
+    margin: 10px;
+    justify-content: space-between;
+    min-height: 200px;
+    border-bottom: 1px solid rgb(214, 214, 214);
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+    }
+
+    .titlewrapper {
+        min-width: 200px;
+        min-height: 100px;
+
+        .date {
+            color: #8D8E97;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 5px;
+        }
+
+        .title {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 32px;
+            line-height: 44px;
+            color: #313037;
+            font-weight: 600;
+            margin-bottom: 5px;
+
+
+
+        }
+
+        .text {
+            font-size: 16px;
+            color: #8D8E97;
+        }
+    }
+
+    .likeWrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+    .image {
+        max-height: 327px;
+        min-width: 60%;
+    }
+    @media (max-width: 680px) {
+        .image {
+            width: 35%;
+            min-width: auto;
+            
+        }
+    }
+}
+
+.dark {
+    color: white !important;
+}

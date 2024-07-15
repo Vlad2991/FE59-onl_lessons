@@ -1,0 +1,105 @@
+.BurgerMenu {
+    position: absolute;
+    left: 0;
+    z-index: 100;
+    opacity: 0;
+    transition: 0.5s;
+    transform: translateX(-100%);
+
+    .content {
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+
+        .header {
+            border-bottom: 1px solid white;
+            width: 100%;
+            background-color: #2231AA;
+        }
+
+        li {
+
+            justify-content: center;
+
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            border-bottom: 1px solid #E8E8E8;
+            width: 100%;
+
+            a {
+                padding: 20px;
+                color: black;
+            }
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            margin-bottom: 100px;
+        }
+
+        .ThemeWrapper {
+            border-top: 1px solid #E8E8E8;
+            display: flex;
+            justify-content: space-between;
+
+            .DayWrapper {
+                cursor: pointer;
+                padding: 25px;
+            }
+
+            .NightWrapper {
+                cursor: pointer;
+                padding: 25px;
+                border-left: 1px solid #E8E8E8;
+            }
+        }
+    }
+
+    .LogOut {
+        display: flex;
+        background-color: #E8E8E8;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        letter-spacing: 0px;
+        text-align: left;
+        justify-content: center;
+        padding: 20px;
+
+        input {
+            border: 0px solid;
+            background: none;
+            font-size: 14px;
+            cursor: pointer;
+            transition: 0.1s;
+        }
+
+        input:hover {
+            scale: 1.1;
+        }
+    }
+}
+
+
+.lightBackground {
+    background-color: #f3f3f3;
+    height: 100vh;
+}
+
+.darkBackground {
+    background-color: gray;
+    height: 100vh;
+}
+
+
+.BurgerMenu.active1 {
+    opacity: 1;
+    transform: translateX(0);
+}

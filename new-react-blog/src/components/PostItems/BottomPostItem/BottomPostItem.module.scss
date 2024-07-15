@@ -1,0 +1,59 @@
+.post {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    justify-content: space-between;
+    min-height: 200px;
+    border-bottom: 1px solid #DADADA;
+
+    .Buttons {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .titlewrapper {
+        min-width: 200px;
+        max-height: 100px;
+        margin-bottom: 20px;
+
+        .date {
+            font-size: 14px;
+            color: #8D8E97;
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 24px;
+            margin-bottom: 5px;
+        }
+
+        .title {
+            color: black;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 28px;
+        }
+
+        .text {
+            text-align: center;
+            color: black;
+        }
+    }
+
+    .likeWrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+    .image {
+        margin-bottom: 20px;
+        max-height: 221px;
+        width: 100%;
+    }
+}
+.dark {
+    color: white !important;
+}

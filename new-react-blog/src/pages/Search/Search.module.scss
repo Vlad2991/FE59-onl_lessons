@@ -1,0 +1,49 @@
+.input {
+    margin-top: 70px;
+    margin-bottom: 65px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 80px;
+    background: none;
+    border: none;
+}
+
+.input:focus {
+    outline: 0;
+}
+
+@media (max-width: 1030px) {
+    .input {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 680px) {
+    .input {
+        font-size: 22px;
+    }
+}
+
+.dark {
+    color: #FFFFFF;
+}
+
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 80vh;
+
+    .notresult {
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 80px;
+        background: none;
+        border: none;
+        margin: 0;
+
+    }
+}

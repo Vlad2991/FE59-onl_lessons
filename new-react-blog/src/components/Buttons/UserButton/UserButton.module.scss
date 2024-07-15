@@ -1,0 +1,30 @@
+.div {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+
+    span {
+        color: white;
+        cursor: pointer;
+    }
+
+    align-items: center;
+}
+
+.div2 {
+    margin-right: 20px;
+    padding: 5px;
+
+    span {
+        color: white;
+        cursor: pointer;
+    }
+
+    background-color: rgb(88, 90, 240);
+    ;
+}
+
+
+.div_active {
+    cursor: pointer;
+}

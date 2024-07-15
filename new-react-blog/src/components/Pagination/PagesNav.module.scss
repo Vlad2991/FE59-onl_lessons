@@ -1,0 +1,118 @@
+.PagesNavContainer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1120px;
+    margin: 0 auto;
+    margin-top: 70px;
+    padding-bottom: 70px;
+
+
+    .PrevPage {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 5px;
+        cursor: pointer;
+
+        button {
+            transition: 0.3s;
+        }
+
+        button:hover {
+
+            color: #313037;
+
+        }
+
+    }
+
+
+
+    button {
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: #8D8E97;
+        border: none;
+        background: none;
+        cursor: pointer;
+
+
+    }
+
+    .PagesNumber {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .button {
+            text-decoration: none;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 24px;
+            color: #313037;
+            margin-right: 20px;
+            cursor: pointer;
+
+
+        }
+
+        svg {
+            margin-right: 20px;
+        }
+    }
+
+    .NextPage {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        cursor: pointer;
+        transition: 0.3s;
+
+        button {
+            transition: 0.3s;
+        }
+
+        button:hover {
+
+            color: #313037;
+
+        }
+
+
+        svg {
+            margin-left: 5px;
+            transform: scaleX(-1);
+        }
+    }
+}
+
+.dark {
+    a {
+        color: white !important;
+    }
+}
+
+.button.active {
+    color: rgb(0, 0, 179) !important
+}
+
+.fav {
+    display: none;
+}
+
+@media (max-width: 440px) {
+    .PagesNavContainer {
+        justify-content: center;
+
+        .PrevPage {
+            display: none;
+        }
+
+        .NextPage {
+            display: none;
+        }
+    }
+}

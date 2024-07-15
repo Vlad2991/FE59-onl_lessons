@@ -1,0 +1,29 @@
+.button {
+    background-color: #2231AA;
+    display: flex;
+    position: relative;
+    border: 0px solid;
+    border-right: 1px solid white;
+    padding: 27px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.span {
+    width: 30px;
+    height: 4px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    transition: all 0.5s;
+}
+
+.span:nth-of-type(2) {
+    top: calc(50% - 10px);
+}
+
+.span:nth-of-type(3) {
+    top: calc(50% + 10px);
+}
